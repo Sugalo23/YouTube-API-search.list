@@ -22,7 +22,7 @@ $(function() {
             item.id.videoId +" 'target='_blank'>" + item.snippet.title + "</a></h3>" +
             "<a href='http://www.youtube.com/watch?v="+ 
             item.id.videoId +" 'target='_blank'>" +
-            "<img src='" + item.snippet.thumbnails.medium.url + "'/>" +
+            "<img src='" + item.snippet.thumbnails.medium.url + "' alt='Video Thumbnail'/>" +
             "</a></div>"]);
         });
       });
