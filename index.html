@@ -3,6 +3,7 @@
   <head>
     <title>YouTube Video Search</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
   </head>
   <body>
     
@@ -10,14 +11,14 @@
         <h1>YouTube Video Search</h1>
     </header>
     
-    <main>
+    <main role=main>
       
       <fieldset>
-          <legend>Search</legend>
+          <legend><h2>Enter Keyword Below</h2></legend>
           <form action="#">
-            <p><input type="text" id="search" placeholder="" autocomplete="off" class="js-query" /></p>
-            <p><input type="submit" value="Search" class=""></p>
-                </form>
+            <input type="text" id="search" autocomplete="off" class="js-query" />
+            <input type="submit" value="Search" class="js-search">
+          </form>
       </fieldset>
       
       
