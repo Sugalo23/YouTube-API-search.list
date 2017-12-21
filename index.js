@@ -18,13 +18,10 @@ $(function() {
       $("#results").html("");
       $.each(results.items, function(index, item) {
           $("#results").append([
-            "<div class='list'>" +
-            "<h3 class='titles'><a href='http://www.youtube.com/watch?v=" + 
-            item.id.videoId +" target='_blank'>" + 
-            item.snippet.title +
-            "</a></h3>" +
+            "<div class='list'><h3 class='titles'><a href='http://www.youtube.com/watch?v=" + 
+            item.id.videoId +" 'target='_blank'>" + item.snippet.title + "</a></h3>" +
             "<a href='http://www.youtube.com/watch?v="+ 
-            item.id.videoId +"'>" +
+            item.id.videoId +" 'target='_blank'>" +
             "<img src='" + item.snippet.thumbnails.medium.url + "'/>" +
             "</a></div>"]);
         });
