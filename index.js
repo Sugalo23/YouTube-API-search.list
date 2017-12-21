@@ -3,28 +3,37 @@ $(function() {
     e.preventDefault();
 
 // request json data from YouTube API
-    var request = gapi.client.youtube.search.list({
+
+    var request = gapi.client.youtube.search.list ({
       part: 'snippet',
-      type: 'thumbnail',
+      type: 'video',
       q: ($('#search').val()),
       maxResults: 3,
 });
 
 // use execute to parse json data requeseted by YouTube API
+
     request.execute(function(response) {
       var results = response.result;
       $("#results").html("");
       $.each(results.items, function(index, item) {
           $("#results").append([
-            "<h2><a href='http://www.youtube.com/watch?v="+ item.id.videoId +"'>" + item.snippet.title +"</a></h2>" +
-            "<a href='" + item.snippet.thumbnails.medium.url + "'><img src='" + item.snippet.thumbnails.medium.url + "'/></a><br>" +
-            "<br><br>"]);
+            "<div class='list'>" +
+            "<h3 class='titles'><a href='http://www.youtube.com/watch?v=" + 
+            item.id.videoId +" target='_blank'>" + 
+            item.snippet.title +
+            "</a></h3>" +
+            "<a href='http://www.youtube.com/watch?v="+ 
+            item.id.videoId +"'>" +
+            "<img src='" + item.snippet.thumbnails.medium.url + "'/>" +
+            "</a></div>"]);
         });
       });
     });
   });
   
-// Grab Key and Endpoint URL
+// Grab Key and Endpoint
+
 function init() {
   gapi.client.setApiKey("AIzaSyCUJsaURE_pZgSlOlfB69TCKrlqMc7ghv4");
   gapi.client.load("youtube", "v3", function() {
