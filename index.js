@@ -19,9 +19,9 @@ $(function() {
       $.each(results.items, function(index, item) {
           $("#results").append([
             "<div class='list'><h3 class='titles'><a href='http://www.youtube.com/watch?v=" + 
-            item.id.videoId +" 'target='_blank'>" + item.snippet.title + "</a></h3>" +
+            item.id.videoId +" 'target='_blank' class='lightbox_trigger'>" + item.snippet.title + "</a></h3>" +
             "<a href='http://www.youtube.com/watch?v="+ 
-            item.id.videoId +" 'target='_blank'>" +
+            item.id.videoId +" 'target='_blank' class='lightbox_trigger'>" +
             "<img src='" + item.snippet.thumbnails.medium.url + "'/>" +
             "</a></div>"]);
         });
