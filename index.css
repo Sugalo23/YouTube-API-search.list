@@ -67,20 +67,20 @@ width: 100px;
 
 a:link {
   font-size: 14px;
-  color: #ff0080;
+  color: #AD0054;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ff3399;
+  color: #A30050;
 }
 
 a:active {
-  color: #ff0080;
+  color: #AD0054;
 }
 
 a:visited {
-  color: #ff3399;
+  color: #AD0054;
 }
 
 .list {
