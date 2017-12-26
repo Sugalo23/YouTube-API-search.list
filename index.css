@@ -50,14 +50,14 @@ input {
 
 .js-search {
   margin-top: 10px;
-  background-color: #ff0080;
+  background-color: #AD0054;
   color: #ffffff;
   text-transform: uppercase;
   border: 0;
 }
 
 .js-search:hover {
-  background-color: #ff3399;
+  background-color: #A30050;
   cursor: pointer;
 }
 
