@@ -17,7 +17,6 @@ $(function() {
       var results = response.result;
       var resultsCount = response.pageInfo.totalResults;
       $("#results").html("");
-      $("#results").append(+ resultsCount +);
       $.each(results.items, function(index, item) {
           $("#results").append([
             "<div class='list'><h3 class='titles'><a href='http://www.youtube.com/watch?v=" + 
