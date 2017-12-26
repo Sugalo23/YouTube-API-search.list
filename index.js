@@ -8,13 +8,14 @@ $(function() {
       part: 'snippet',
       type: 'video',
       q: ($('#search').val()),
-      maxResults: 3,
+      maxResults: 10,
 });
 
 // use execute to parse json data requeseted by YouTube API
 
     request.execute(function(response) {
       var results = response.result;
+      var resultsCount = response.pageInfo.totalResults;
       $("#results").html("");
       $.each(results.items, function(index, item) {
           $("#results").append([

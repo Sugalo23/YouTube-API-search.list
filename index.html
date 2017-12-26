@@ -11,18 +11,19 @@
         <h1>YouTube Video Search</h1>
     </header>
     
-    <main role=main>
+    <main role="main" aria-live="assertive">
       
       <fieldset>
           <legend><h2>Enter Keyword Below</h2></legend>
-          <form action="#">
-            <input type="text" id="search" autocomplete="off" class="js-query" />
+          <form action="#" name="youtube-search">
+            <input type="text" name="enter-keyword" id="search" autocomplete="off" class="js-query" />
             <input type="submit" value="Search" class="js-search">
           </form>
       </fieldset>
       
       
-     <div id="results"></div>
+     <div id="results">
+      <div> ${resultsCount} </div>
       
       
     </main>
