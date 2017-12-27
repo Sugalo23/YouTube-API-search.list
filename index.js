@@ -35,6 +35,17 @@ $(function() {
       });
     });
   });
+
+function navigationButtons(result) {
+  return `
+    <span><button><</button></span>
+    <span><a href='${result.nextPageToken}'><button>></button></a></span>
+`
+}
+function displayNavigationButtons(data) {
+  const nextPage = navigationButtons(data);
+  $('.js-search-results').append(nextPage);
+}
   
 // Grab Key and Endpoint
 
