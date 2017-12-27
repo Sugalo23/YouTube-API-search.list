@@ -11,7 +11,7 @@ $(function() {
       maxResults: 50,
       pageInfo: {
         totalResults: 50,
-        resultsPerPage": 5
+        resultsPerPage: 5
       }
 });
 
