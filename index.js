@@ -9,9 +9,11 @@ $(function() {
       type: 'video',
       q: ($('#search').val()),
       maxResults: 50,
+      nextPageToken: "nextPageToken",
+      prevPageToken: "prevPageToken",
       pageInfo: {
         totalResults: 50,
-        resultsPerPage: 5
+        resultsPerPage: 5,
       }
 });
 
