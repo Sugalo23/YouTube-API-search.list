@@ -8,7 +8,11 @@ $(function() {
       part: 'snippet',
       type: 'video',
       q: ($('#search').val()),
-      maxResults: 10,
+      maxResults: 50,
+      pageInfo: {
+        totalResults: 50,
+        resultsPerPage": 5
+      }
 });
 
 // use execute to parse json data requeseted by YouTube API
